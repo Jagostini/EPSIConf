@@ -6,4 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+
+    goToPlanning() {
+        console.log("planning");
+    }
+
+    goToVideo() {
+        console.log("Video");
+    }
+
+    goToContact() {
+        console.log("contact");
+    }
 }
