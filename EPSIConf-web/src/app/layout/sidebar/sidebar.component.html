@@ -1,0 +1,19 @@
+<div class = "sidebar">
+    <div class = "contact">
+        <button (click) = "goToContact()"> Voir les contacts</button>
+        <p *ngIf="contact && contact === true">
+            Contact : {{contactJules.contact}}<br>
+            Telephone : {{contactJules.tel}}<br>
+        </p>
+        <p *ngIf="contact && contact === true">
+            Contact : {{contactRomain.contact}}<br>
+            Telephone : {{contactRomain.tel}}<br>
+        </p>
+        <ul>
+            <li *ngFor="let data of contactList">
+                {{ data.contact }}
+                {{ data.tel }}
+            </li>
+        </ul>
+    </div>
+</div>
