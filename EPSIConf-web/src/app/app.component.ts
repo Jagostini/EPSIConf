@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Directive, TemplateRef, ViewContainerRef, Input, ApplicationRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   constructor(private appRef: ApplicationRef) { }
-  ngOnInit() { }
+  ngOnInit() {
+
+   }
 }
