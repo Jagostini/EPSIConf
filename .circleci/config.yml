@@ -7,4 +7,9 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/php:7.1.5-browsers
+      - image: circleci/node:8-browsers
+      - image: cercleci/mongo:3.2
+      
+    steps:
+      - checkout
+      - run: echo "premier test ahahah !!!"
